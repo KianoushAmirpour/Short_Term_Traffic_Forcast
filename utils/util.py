@@ -136,3 +136,17 @@ def inputs_sanity_checks(files):
         print(f"{city=}, {days=}, {months=}, {year=}")
         if (idx + 1) % 28 == 0:
             print("*"*20)
+
+
+def make_dir():
+    if not os.path.isdir("checkpoints"):
+        os.makedirs("checkpoints")
+        print("directory created for saving models")
+    if not os.path.isdir("logs"):
+        os.makedirs("logs")
+        print("directory created for tensorboard")
+    if not os.path.isdir("images"):
+        os.makedirs("images")
+        print("directory created for saving images")
+    else:
+        print("Needed directories already exist")            
