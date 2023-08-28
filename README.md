@@ -3,8 +3,6 @@ Study high-resolution 8-channel traffic movies of entire cities.
 Overcome the temporal domain shift pre/post COVID-19  
 For more details about the challenge and how you can download the data, see [here](https://github.com/iarai/NeurIPS2021-traffic4cast)
 
-# explain the problem, why we used unet. evry tings? handing the huge data sets?
-
 ## Project structure:
 - models
     - unet.py
