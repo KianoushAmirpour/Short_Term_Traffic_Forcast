@@ -31,22 +31,28 @@ To mitigate the limitations posed by memory constraints, we implemented gradient
 ## Available Command Line Arguments
 `--cities`:  
 Description: List of cities to train and validate the model on.  
-Use Case: Specify the cities you want to include in your training and validation process. Choose from 'ANTWERP', 'BANGKOK', 'BARCELONA', and 'MOSCOW' to customize your training dataset.    
+Use Case: Specify the cities you want to include in your training and validation process. Choose from 'ANTWERP', 'BANGKOK', 'BARCELONA', and 'MOSCOW' to customize your training dataset.  
+
 `--train_year` and `--val_year`:  
 Description: List of years for training and validation data, respectively.  
-Use Case: Select the years of data you want to use for training and validation. Choose from 2019 and 2020 to tailor your dataset to specific time frames.  
+Use Case: Select the years of data you want to use for training and validation. Choose from 2019 and 2020 to tailor your dataset to specific time frames. 
+
 `--model`:  
 Description: Model architecture to use for predictions.  
 Use Case: Choose the model architecture for your traffic prediction. The available option is "UNET," which you can further modify or expand as needed.  
+
 `--scheduler`, `--learning_rate`, `--batch_size`, `--num_workers`, `--num_epochs`, `--L1_regularization`, `--wd`:    
 Description: Hyperparameters for training and optimization.  
 Use Case: Adjust these hyperparameters to fine-tune your training process. Experiment with learning rates, batch sizes, regularization options, weight decay, and other parameters to achieve optimal results.  
+
 `--num_file_train`, `--accumulation_step`, `--use_mask`:   
 Description: Additional training-related parameters.  
 Use Case: Control the number of files used for training, the gradient accumulation step size, and whether to use masks in your training data.  
-`--device`: 
+
+`--device`:  
 Description: Device for training ('cuda:0' for GPU or 'cpu' for CPU).  
 Use Case: Select the device on which to train your model. This argument allows you to leverage available hardware resources effectively.  
+
 `--seed`:  
 Description: Seed for random number generation.  
 Use Case: Set a specific seed to ensure reproducibility across different runs of the code.  
