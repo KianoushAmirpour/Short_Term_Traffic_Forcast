@@ -88,7 +88,7 @@ if __name__ == "__main__":
     args = parse_args()
     util.seed_everything(args.seed)
 
-    experiment_name = "Training_2019_Validation_2020_ANTWERP_UNET_unet512filter_L1_dropout"
+    experiment_name = ""
 
     writer = SummaryWriter(f"logs/{experiment_name}")
 
